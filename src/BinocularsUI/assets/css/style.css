@@ -1,0 +1,323 @@
+/* ========================================================= */
+/* General rules - START                                     */
+/* ========================================================= */
+
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    font-family: 'UbuntuThin';
+}
+
+/* ==== Loading fonts ==== */
+@font-face {
+    font-family: "UbuntuThin";
+    src: url('/assets/fonts/Ubuntu-Th.ttf');
+}
+
+@font-face {
+    font-family: "UbuntuBold";
+    src: url('/assets/fonts/Ubuntu-B.ttf');
+}
+
+@font-face {
+    font-family: "UbuntuRbold";
+    src: url('/assets/fonts/Ubuntu-R.ttf');
+}
+
+.header {
+    padding: 10px;
+    background: black;
+    color: white;
+}
+  
+.section {
+padding: auto;
+}
+
+/* ========================================================= */
+/*                        adm_panel                          */
+/* ========================================================= */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    font-family: 'UbuntuThin';
+}
+
+.main-container.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.content-box h2 {
+    margin-top: 15px;
+}
+
+.content-box input {
+    height: 25px;
+    width: 150px;
+    text-align: center;
+}
+
+.content-box button {
+    height: 30px;
+    width: 150px;
+    background-color: #a1a1a1;
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.content-box button:hover {
+    background-color: #c2c2c2;
+}
+
+.content-box button:active {
+    background-color: #777777;
+}
+
+.content-box.error {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 500px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'UbuntuRbold';
+    margin-bottom: 40px;
+}
+
+.main-container .hr-line {
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+    width: 80%;
+    border: none;
+	border: 1px solid #000000;
+}
+
+.content-box.left {
+    height: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+
+.content-box.left.nospace {
+    margin-bottom: 0px;
+}
+
+.content-box.left .button-list {
+    height: 30px;
+}
+
+.content-box.row {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-box.row p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.content-box.row input {
+    height: 15px;
+    width: 150px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.content-box.row button {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.content-box.row button.delete-all {
+    margin-left: 120px;
+}
+
+.box-error{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    overflow-y: auto;
+    height: 70px;
+    width: 80%;
+    background-color: #fd3131;
+    color: #000000;
+    font-family: 'UbuntuRbold';
+    font-size: 1.4em;
+}
+
+.box-error.success{
+    background-color: #31fd3b;
+    
+}
+
+.box-error button{
+    height: 30px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.content-box.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+}
+
+.devices-list-table {
+	width: 80%;
+	border: 1px solid #ffffff;
+	border-collapse: collapse; 
+}
+.devices-list-table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #b4b4b4;
+	border: 1px solid #dddddd;
+}
+.devices-list-table td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+/* ========================================================= */
+/*                   device_emulator                         */
+/* ========================================================= */
+.main-container-device header {
+    margin-top: 10px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.main-container header h1 {
+    color: black;
+    font-size: 1.8em;
+    font-weight: 800;
+    font-family: 'UbuntuThin';
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'UbuntuThin';
+}
+
+
+.main-content .box-parametr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'UbuntuRBold';
+    width: 350px;
+    margin-top: 20px;
+   
+}
+
+.main-content button {
+    background-color: #a09e9e;
+    border: none;
+    color: black;
+    padding: 10px 42px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.main-content button:hover {
+    background-color: #cfcfcf;
+}
+
+.main-content button:active {
+    background-color: #888888;
+}
+
+.main-content .box-parametr .box-parametr-content {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.main-content .box-parametr .box-parametr-content-b {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.main-content .box-parametr .box-parametr-content-row {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-content .box-parametr .box-parametr-content p{
+    margin-right: 10px;
+}
+
+.main-content .box-parametr .box-parametr-content a{
+    text-decoration: none;
+    color: #fc0000;
+}
+
+.main-content .box-parametr .box-parametr-content a.connect{
+    color: green;
+}
+
+.main-content .box-parametr .box-parametr-content input{
+    width: 200px;
+    padding: 5px 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

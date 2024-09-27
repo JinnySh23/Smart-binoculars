@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Админка</title>
+
+    <meta charset="utf-8">
+
+    <!-- For correct display on a smartphone -->
+    <meta name="viewport" content="width=350">
+
+    <!-- Connecting the style sheet -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    <!-- Connecting the jQuery library -->
+    <script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
+
+    <!-- Connecting our application core script -->
+    <script type="text/javascript" src="/assets/js/core.js"></script>
+
+    <!-- We connect our script to implement the logic -->
+    <script type="text/javascript" src="/assets/js/misc.js"></script>
+    <script type="text/javascript" src="/assets/js/adm_panel.js"></script>
+</head>
+<body>
+
+    <!-- Main and main container -->
+    <div class="main-container">
+
+        <div class="content-box">
+            <h2>Инженерная панель</h2>
+        </div>
+
+        <div class="content-box">
+            <hr class="hr-line">
+        </div>
+        
+        <div class="content-box left">
+            <h3>Devices</h3>
+            <div class="content-box row">
+                <button class="button-list" id="button-get-devices-list">Список</button>
+                <button class="button-list" id="button-close-devices-list">Убрать список</button>
+            </div>
+        </div>
+        <div class="content-box table" id="devices-table">
+
+        </div>
+        <div class="content-box left nospace">
+            <div class="content-box row">
+                <p>UUID: </p><input type="text" id="input-uuid-device-add" placeholder="uuid">
+                <p>AccessToken: </p><input type="text" id="input-accesstoken-device-add" placeholder="AccessToken">
+                <p>Location: </p><input type="text" id="input-location-device-add" placeholder="Location">
+            </div>
+        </div>
+        <div class="content-box left">
+            <div class="content-box row">
+                <button id="button-add-device">Добавить</button>
+                <button id="button-change-device">Редактировать</button>
+                <button id="button-gen-token">Сгенерировать UUID и токен</button>
+            </div>
+        </div>
+        <div class="content-box left">
+            <div class="content-box row">
+                <p>UUID: </p><input type="text" id="input-uuid-device-del" placeholder="uuid">
+                <button id="button-delete-device">Удалить</button>
+                <button id="button-delete-all-devices" class="delete-all">Удалить ВСЁ</button>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <hr class="hr-line">
+        </div>
+
+        <div class="content-box left">
+            <h3>Отправка команды</h3>
+        </div>
+
+        <div class="content-box left">
+            <div class="content-box row">
+                <p>UUID: </p><input type="text" id="input-uuid-device-send-command" placeholder="uuid">
+                <p>Команда: </p><input type="text" id="input-command-device-send-command" placeholder="Команда">
+                <button id="button-command-send">Отправить</button>
+            </div>
+        </div>
+
+        <div class="content-box left">
+            <div class="content-box row">
+                <button id="button-command-send-open-shatter">Открыть шаттер на 5 секунд</button>
+                <button id="button-command-send-close-shatter">Закрыть шаттер</button>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <hr class="hr-line">
+        </div>
+        <div class="content-box left">
+            <div class="content-box row">
+                <button id="button-to-emulator">Эмулятор устройства</button>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <div class="box-error" id="box-message">
+                <p id="box-message-text"></p>
+                <button id="box-message-close">Закрыть</button>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <hr class="hr-line">
+        </div>
+</body>
+</html>

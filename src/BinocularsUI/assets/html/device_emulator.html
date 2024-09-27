@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IoT Device Emulator</title>
+    <meta charset="utf-8">
+
+    <!-- For correct display on a smartphone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Connecting the style sheet -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    <!-- Connecting the jQuery library -->
+    <script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
+
+    <!-- Connecting our application core script -->
+    <script type="text/javascript" src="/assets/js/core.js"></script>
+
+    <!-- We connect our script to implement the logic -->
+    <script type="text/javascript" src="/assets/js/device_emulator.js"></script>
+</head>
+<body>
+    <!-- Main and main container -->
+    <div class="main-container-device">
+        <header>
+            <h1>IoT Device Emulator</h1>
+        </header>
+            
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="box-parametr">
+                <button id="button-device-connect">Connect</button>
+                <div class="box-parametr-content">
+                    <p>UUID:</p>
+                    <span id="span-device-uuid"></span>
+                </div>
+            
+                <div class="box-parametr-content">
+                    <p>AccesToken:</p>
+                    <span id="span-device-token"></span>
+                </div>
+
+                <div class="box-parametr-content">
+                    <p>Status:</p>
+                    <a id="a-device-status">No connected</a>
+                </div>
+
+                <div class="box-parametr-content">
+                    <p>Shutter:</p>
+                    <span id="span-device-is-shutter">CLOSED</span>
+                </div>
+
+                <div class="box-parametr-content">
+                    <div class="box-parametr-content-b">
+                        <div class="box-parametr-content-row">
+                            <p>UUID:</p>
+                            <input type="text" id="input-uuid-device" placeholder="">
+                        </div>
+                        <div class="box-parametr-content-row">
+                            <p>AccesToken:</p>
+                            <input type="text" id="input-token-device" placeholder="">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="box-parametr-content">
+                    
+                </div>
+                <button id="button-device-save">Save</button>
+                <div class="box-parametr-content">
+                    <p>Server Answer:</p>
+                    <a id="a-device-server-answer"></a>
+                </div>
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="box-error" id="box-message">
+                <p id="box-message-text"></p>
+                <button id="box-message-close">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

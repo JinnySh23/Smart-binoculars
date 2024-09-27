@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Авторизация</title>
+
+    <meta charset="utf-8">
+
+    <!-- For correct display on a smartphone -->
+    <meta name="viewport" content="width=350">
+
+    <!-- Connecting the style sheet -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    <!-- Connecting the jQuery library -->
+    <script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
+
+    <!-- Connecting our application core script -->
+    <script type="text/javascript" src="/assets/js/core.js"></script>
+
+    <!-- We connect our script to implement the logic -->
+    <script type="text/javascript" src="/assets/js/login.js"></script>
+</head>
+
+<body>
+    <!-- The main container -->
+    <div class="main-container login">
+        <div>
+            <div id="box-error" class="content-box error">
+                <p></p>
+            </div>
+
+            <!-- Entry form -->
+            <div class="content-box">
+                <h2>Log In</h2>
+            </div>
+
+            <div class="content-box">
+                <input type="text" id="input-user-login" placeholder="login">
+            </div>
+
+            <div class="content-box">
+                <input type="password" id="input-user-password" placeholder="password">
+            </div>
+
+            <div class="content-box">
+                <button id="button-user-login">Вход</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
